@@ -236,6 +236,8 @@ void manage_http_requests(int client_fd
 		 *** filename, and protocol ***/
 /*** TO BE DONE 2.0 START ***/
 
+        // HERE
+
 
 /*** TO BE DONE 2.0 END ***/
 

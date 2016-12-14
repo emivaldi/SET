@@ -116,8 +116,10 @@ void run_webserver(const char *const port_as_str, char *www_root, const int *con
 
 		/*** create PTHREAD number i, running client_connection_thread() ***/
 /*** TO BE DONE 2.0 START ***/
-        void *vp;
-        client_connection_thread(vp);
+
+        if(pthread_create(&thread_ids[i], NULL, client_connection_thread, &connection_no[i]) != 0)
+            fail("Pthread error");
+
 /*** TO BE DONE 2.0 END ***/
 
 	}
